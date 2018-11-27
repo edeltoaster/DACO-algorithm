@@ -1,0 +1,9 @@
+Changes made to DACO 1.01 prototype:
+    - completely removed the data retrieval part
+    - added code for DDIN/PPIN format input as given by PPIXpress
+    - pairGrwoth behavior now as in JDACO: only above threshold and not at least 2
+    - adjusted pruning in pair building towards behaviour of JDACO (< to >)
+    - added prob_threshold (was fixed at 0.5)
+    - remove results including only non-seed proteins
+
+    -> identical behavior as JDACO
