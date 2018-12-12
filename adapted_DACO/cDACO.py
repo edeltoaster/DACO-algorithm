@@ -3,7 +3,7 @@
 Searches for complexes that could be interesting in transcriptional regulation
 using the domain-aware cohesiveness optimization algorithm
 '''
-import sys, ppi_handler, wDDI_network, gzip
+import sys, ppi_handler, cwDDI_network, gzip
 import time
 
 if __name__ == '__main__':
@@ -43,7 +43,7 @@ if __name__ == '__main__':
     print 'Reading protein-protein interaction network file ...'
     ppi = ppi_handler.PPI(f_ppin)
     print 'Constructing domain-domain interaction network ... '
-    ddi = wDDI_network.DDI_network(f_ddin, ppi)
+    ddi = cwDDI_network.DDI_network(f_ddin, ppi)
     
     results = set()
     n = len(tfs)

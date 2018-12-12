@@ -1,9 +1,13 @@
-Changes made to DACO 1.01 prototype:
+Changes made compared to adapted_DACO 1.01:
+    - added cached implementation cDACO.py that does not recompute already seen computational states but may need significantly more memory
+    
+Changes made compared to DACO 1.01 prototype:
     - completely removed the data retrieval part
     - added code for DDIN/PPIN format input as given by PPIXpress
     - pairGrwoth behavior now as in JDACO: only above threshold and not at least 2
-    - adjusted pruning in pair building towards behaviour of JDACO (< to >)
-    - added prob_threshold (was fixed at 0.5)
+    - adjusted pruning in pair building towards behaviour of JDACO
+    - added prob_threshold parameter (was fixed at 0.5)
     - remove results including only non-seed proteins
-
-    -> identical behavior as JDACO
+    - and changes noted above
+    
+-> identical behavior and results as JDACO
